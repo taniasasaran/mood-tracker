@@ -1,0 +1,93 @@
+.app-container {
+  font-family: "Segoe UI", sans-serif;
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+  background: #f7f9fc;
+}
+
+.app-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 600px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown {
+  padding: 0.5rem;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.small-text {
+  font-size: 0.85rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+.reset-button {
+  margin-top: 1rem;
+  background: #f44336;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.reset-button:hover {
+  background: #c62828;
+}
+
+.mood-label {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.mood-happy { color: #ff9800; }
+.mood-sad { color: #3f51b5; }
+.mood-excited { color: #e91e63; }
+.mood-anxious { color: #9c27b0; }
+.mood-chill { color: #009688; }
+.mood-motivated { color: #4caf50; }
+
+.quote {
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+.score {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+.score-bar {
+  background: #e0e0e0;
+  border-radius: 0.5rem;
+  height: 1rem;
+  overflow: hidden;
+}
+
+.fill {
+  background: #4caf50;
+  height: 100%;
+  transition: width 0.4s ease;
+}
